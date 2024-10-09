@@ -15,6 +15,7 @@ const Dropdown: React.FC<DropdownProps> = ({ sourceType, source, fieldResource, 
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
 
+
   const fetchOptions = async () => {
     try {
       setError(null);
